@@ -19,14 +19,11 @@
       background-color: #f4f4f4;
     }
 
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
+    a { text-decoration: none; color: inherit; }
 
     /* Header */
     header {
-      background: url('https://images.unsplash.com/photo-1581091215360-53097b4f1f1d?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+      background: url('images/header.png') no-repeat center center/cover;
       height: 100vh;
       display: flex;
       flex-direction: column;
@@ -93,7 +90,7 @@
       color: #0078d4; /* Azul tecnológico */
     }
 
-    /* Imagenes de dispositivos */
+    /* Imágenes de dispositivos */
     .devices {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -106,7 +103,7 @@
       border-radius: 10px;
       opacity: 0;
       transform: translateY(30px);
-      transition: transform 0.3s ease, opacity 0.3s ease;
+      transition: transform 0.5s ease, opacity 0.5s ease;
     }
 
     .device-card img {
@@ -133,23 +130,17 @@
       color: #ccc;
     }
 
-    /* Animación al hacer scroll */
+    /* Animación fade-in al hacer scroll */
     .show {
       opacity: 1 !important;
       transform: translateY(0) !important;
     }
 
-    /* Responsive header */
+    /* Responsive header y dispositivos */
     @media (max-width:768px) {
-      header h1 {
-        font-size: 2.2rem;
-      }
-      header p {
-        font-size: 1.1rem;
-      }
-      .device-card img {
-        height: 180px;
-      }
+      header h1 { font-size: 2.2rem; }
+      header p { font-size: 1.1rem; }
+      .device-card img { height: 180px; }
     }
   </style>
 </head>
@@ -188,10 +179,22 @@
   <section class="container">
     <h2 style="text-align:center; margin-bottom:2rem;">Dispositivos que reparamos</h2>
     <div class="devices">
-      <div class="device-card scroll"><img src="https://images.unsplash.com/photo-1581091215360-53097b4f1f1d?auto=format&fit=crop&w=800&q=80" alt="Computadora"></div>
-      <div class="device-card scroll"><img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=80" alt="Teléfono"></div>
-      <div class="device-card scroll"><img src="https://images.unsplash.com/photo-1581091870626-2d2b64a3e18c?auto=format&fit=crop&w=800&q=80" alt="Tablet"></div>
-      <div class="device-card scroll"><img src="https://images.unsplash.com/photo-1581093588401-86bffdbb6591?auto=format&fit=crop&w=800&q=80" alt="Televisor"></div>
+     <div class="device-card scroll"><img src="images/computadora1.jpeg" alt="Computadora 1"></div>
+    <div class="device-card scroll"><img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=80" alt="Teléfono 1"></div>
+    <div class="device-card scroll"><img src="images/tablet1.png" alt="Tablet 1"></div>
+    <div class="device-card scroll"><img src="images/computadora2.jpg" alt="Televisor 1"></div>
+    <div class="device-card scroll"><img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80" alt="Laptop 1"></div>
+    <div class="device-card scroll"><img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?q=80&w=927&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Smartphone 2"></div>
+    <div class="device-card scroll"><img src="images/tablet2.png" alt="Tablet 2"></div>
+    <div class="device-card scroll"><img src="https://images.unsplash.com/photo-1517433456452-f9633a875f6f?auto=format&fit=crop&w=800&q=80" alt="Televisor 2"></div>
+    <div class="device-card scroll"><img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Computadora 2"></div>
+    <div class="device-card scroll"><img src="https://images.unsplash.com/photo-1640936343842-268f9d87e764?q=80&w=1447&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Teléfono 2"></div>
+    <div class="device-card scroll"><img src="images/tablet3.png" alt="Tablet 3"></div>
+    <div class="device-card scroll"><img src="https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&fit=crop&w=800&q=80" alt="Televisor 3"></div>
+    <div class="device-card scroll"><img src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Laptop 2"></div>
+    <div class="device-card scroll"><img src="https://images.unsplash.com/photo-1719945421298-f03d3d80c3e1?q=80&w=1674&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Smartphone 3"></div>
+    <div class="device-card scroll"><img src="images/tablet4.png" alt="Tablet 4"></div>
+    <div class="device-card scroll"><img src="https://images.unsplash.com/photo-1601944177325-f8867652837f?q=80&w=2077&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Televisor 4"></div>
     </div>
   </section>
 
@@ -203,7 +206,7 @@
     <p>&copy; 2026 ReparaTech. Todos los derechos reservados.</p>
   </footer>
 
-  <!-- Script para animación al hacer scroll -->
+  <!-- Script para animación fade-in al hacer scroll -->
   <script>
     const scrollElements = document.querySelectorAll('.scroll');
 
@@ -226,12 +229,8 @@
       })
     }
 
-    window.addEventListener('scroll', () => {
-      handleScrollAnimation();
-    });
-    window.addEventListener('load', () => {
-      handleScrollAnimation();
-    });
+    window.addEventListener('scroll', handleScrollAnimation);
+    window.addEventListener('load', handleScrollAnimation);
   </script>
 
 </body>
